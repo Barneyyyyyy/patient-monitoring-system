@@ -39,3 +39,9 @@ build/
 
 # Ignore all test-related files
 src/test/
+
+# Ignore all build-related files
+.DS_Store
+
+# PPT file
+Design.pptx
