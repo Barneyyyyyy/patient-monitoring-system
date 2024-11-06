@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "PatientEvent",
+  "namespace": "com.healthcare",
+  "fields": [
+    {"name": "name", "type": "string"},
+    {"name": "age", "type": "int"},
+    {"name": "condition", "type": "string"}
+  ]
+}
