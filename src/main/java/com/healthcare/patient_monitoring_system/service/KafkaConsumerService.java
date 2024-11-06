@@ -24,7 +24,7 @@ public class KafkaConsumerService {
     public KafkaConsumerService() {
         try {
             // Load Avro schema from the .avsc file
-            InputStream schemaStream = Files.newInputStream(Paths.get("src/main/resources/patient_event.avsc"));
+            InputStream schemaStream = getClass().getClassLoader().getResourceAsStream("patient_event.avsc");
             schema = new Schema.Parser().parse(schemaStream);
         } catch (IOException e) {
             e.printStackTrace();
